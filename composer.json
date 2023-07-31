@@ -1,0 +1,20 @@
+{
+    "name": "coyotesoftware/coyotomic",
+    "description": "Tool to simplify the creation of frontend components with Atomic principles and bootstrap.",
+    "type": "composer-plugin",
+    "require": {
+        "symfony/webpack-encore-bundle": "^2.0",
+        "symfony/process": "^6.3"
+    },
+    "license": "Unlicense",
+    "autoload": {
+        "psr-4": {
+            "Coyotesoftware\\Coyotomic\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Victor Mendez"
+        }
+    ]
+}
