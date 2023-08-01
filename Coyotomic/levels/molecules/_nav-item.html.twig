@@ -1,0 +1,23 @@
+{% set classItem = 'nav-item' %}
+{% set classLink = 'nav-link' %}
+{% set idMetaData = '' %}
+{% if item.label is defined %}
+    {% set classItem = classItem ~ ' dropdown' %}
+    {% set classLink = classLink ~ ' dropdown-toggle' %}
+    {% set idMetaData = item.label %}
+{% endif %}
+<li class="{{ classItem }}">
+    {% include '@coyotomic/atoms/_link.html.twig' with {
+            'class': classLink,
+            'text':  item.text,
+            'link':  item.link,
+            'meta':  idMetaData
+        } 
+    %}
+    {% if item.subitems is defined %} 
+        {% include '@coyotomic/molecules/_nav-item-dropdown.html.twig' with { 
+            'items': item.subitems,
+            'meta':  idMetaData
+        } %}
+    {% endif %}
+</li>

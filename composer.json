@@ -9,7 +9,7 @@
         }
     },
     "extra": {
-        "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin"
+        "class": "CoyoteSoftware\\Coyotomic\\CoyotomicPlugin"
     },
     "require": {
         "symfony/webpack-encore-bundle": "^2.0",

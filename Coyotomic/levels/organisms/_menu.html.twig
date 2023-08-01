@@ -1,0 +1,16 @@
+<script src="{{ asset('build/organisms/menu.js') }}"></script>
+<nav class="organisms_menu navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Join My Gala</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            {% for item in menu %}
+                {% include '@coyotomic/molecules/_nav-item.html.twig' with {'item': item } %}
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

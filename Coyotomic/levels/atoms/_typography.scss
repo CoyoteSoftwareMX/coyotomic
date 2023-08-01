@@ -1,0 +1,87 @@
+// Defined fonts for this project
+$font-archivoblack-regular:     "ArchivoBlack-Regular";
+$font-awesome:                  "Font Awesome 6 Free";
+$font-caprasimo-regular:        "Caprasimo-Regular";
+$font-codystar-light:           "Codystar-Light";
+$font-codystar-regular:         "Codystar-Regular";
+$font-fjallaone-regular:        "FjallaOne-Regular";
+$font-greatvibes-regular:       "GreatVibes-Regular";
+$font-kodchasan-bold:           "Kodchasan-Bold.";
+$font-kodchasan-italic:         "Kodchasan-Italic";
+$font-kodchasan-light:          "Kodchasan-Light";
+$font-kodchasan-regular:        "Kodchasan-Regular";
+$font-nanumpenscript-regular:   "NanumPenScript-Regular";
+
+// Font weights
+$font-weight-semi-bold: 700;
+$font-weight-bold: bold;
+// Font in page
+$titles-font-family: $font-archivoblack-regular;
+$text-font-family: $font-fjallaone-regular;
+$elements-font-family:  $font-kodchasan-regular;
+
+@font-face 
+{
+    font-family: $font-archivoblack-regular;
+    src: url('../../assets/fonts/ArchivoBlack-Regular.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-caprasimo-regular;
+    src: url('../../assets/fonts/Caprasimo-Regular.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-codystar-light;
+    src: url('../../assets/fonts/Codystar-Light.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-codystar-regular;
+    src: url('../../assets/fonts/Codystar-Regular.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-fjallaone-regular;
+    src: url('../../assets/fonts/FjallaOne-Regular.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-greatvibes-regular;
+    src: url('../../assets/fonts/GreatVibes-Regular.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-kodchasan-bold;
+    src: url('../../assets/fonts/Kodchasan-Bold.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-kodchasan-italic;
+    src: url('../../assets/fonts/Kodchasan-Italic.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-kodchasan-light;
+    src: url('../../assets/fonts/Kodchasan-Light.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-kodchasan-regular;
+    src: url('../../assets/fonts/Kodchasan-Regular.ttf')  format('truetype');
+}
+
+@font-face 
+{
+    font-family: $font-nanumpenscript-regular;
+    src: url('../../assets/fonts/NanumPenScript-Regular.ttf')  format('truetype');
+}

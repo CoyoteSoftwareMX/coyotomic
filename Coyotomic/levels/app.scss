@@ -1,0 +1,20 @@
+
+@import 'atoms/color';
+@import 'atoms/typography';
+
+@import 'organisms/menu';
+
+@import 'molecules/nav-item-dropdown';
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: $main-color;
+    font-family: $text-font-family;
+
+    ul {
+        
+        font-weight: $font-weight-semi-bold;
+        font-family: $elements-font-family;
+    }
+}

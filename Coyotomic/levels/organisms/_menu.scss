@@ -1,0 +1,11 @@
+.organisms_menu {
+    background-color: $organisms_menu_background;
+
+    a {
+        color: $organisms_menu_font_color;
+
+        &:hover, &.nav-link.show {
+            color: $organisms_menu_font_color_hover;
+        }
+    }
+}

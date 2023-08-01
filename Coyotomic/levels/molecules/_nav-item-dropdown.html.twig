@@ -1,0 +1,10 @@
+<ul class="nav-item-dropdown dropdown-menu" aria-labelledby="{{ meta }}">
+    {% for item in items %}
+    <li>{% include '@coyotomic/atoms/_link.html.twig' with {
+            'class': 'dropdown-item',
+            'text':  item.text,
+            'link':  item.link
+        } 
+    %}</li>
+    {% endfor %}
+</ul>

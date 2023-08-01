@@ -1,0 +1,8 @@
+.nav-item-dropdown.dropdown-menu {
+    background-color: $organisms_menu_background;
+
+    :hover {
+        background-color: $organisms_menu_background_hover;
+        color: $organisms_menu_font_color_hover;
+    } 
+}

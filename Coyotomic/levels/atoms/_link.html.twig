@@ -1,0 +1,5 @@
+{% set url = link %}   
+{% if not(('#' in url) or ('http' in url)) %}
+    {% set url = path(link) %} 
+{% endif %}
+<a class="{{ class }}" href="{{ url }}" {% if meta %} id="{{ meta }}" role="button" data-bs-toggle="dropdown" aria-expanded="false"{% endif %}>{{ text }}</a>
