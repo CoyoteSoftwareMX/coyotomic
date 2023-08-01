@@ -1,6 +1,6 @@
 <?php
 
-namespace CoyoteSoftware\Coyotomic;
+namespace Coyotomic;
 
 use Composer\Plugin\PluginInterface;
 

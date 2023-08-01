@@ -10,7 +10,7 @@
     },
     "extra": {
        
-        "class": "CoyoteSoftware\\Coyotomic\\InstallPlugin"
+        "class": "Coyotomic\\InstallPlugin"
     },
     "require": {
         "symfony/webpack-encore-bundle": "^2.0",
