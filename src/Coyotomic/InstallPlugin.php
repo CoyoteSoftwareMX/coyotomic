@@ -28,6 +28,7 @@ class InstallPlugin implements PluginInterface, EventSubscriberInterface
     {
         $this->generateFilesAndFolders(new Filesystem());
         $this->copyBuildToRoot(new Filesystem());
+        $this->configureTwig(new Filesystem());
     }
 
     private function generateFilesAndFolders(Filesystem $fs)
