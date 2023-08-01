@@ -4,7 +4,7 @@ namespace CoyoteSoftware\Coyotomic;
 
 use Composer\Plugin\PluginInterface;
 
-class CoyotomicPlugin implements PluginInterface, EventSubscriberInterface
+class InstallPlugin implements PluginInterface, EventSubscriberInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {
