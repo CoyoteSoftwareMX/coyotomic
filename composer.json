@@ -5,10 +5,11 @@
     "license": "Unlicense",
     "autoload": {
         "psr-4": {
-            "Coyotesoftware\\Coyotomic\\": "src/"
+            "Coyotesoftware\\": "src/"
         }
     },
     "extra": {
+       
         "class": "CoyoteSoftware\\Coyotomic\\CoyotomicPlugin"
     },
     "require": {
