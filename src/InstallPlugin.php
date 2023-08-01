@@ -47,6 +47,7 @@ class InstallPlugin implements PluginInterface, EventSubscriberInterface
         $io = $event->getIO();
         $this->activate($composer, $io);
     }
+    
     private function configureTwig(Filesystem $fs)
     {
         $twigConfig = <<<EOL
