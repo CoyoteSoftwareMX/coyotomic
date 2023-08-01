@@ -3,6 +3,13 @@
 namespace Coyotomic;
 
 use Composer\Plugin\PluginInterface;
+use Composer\EventDispatcher\EventSubscriberInterface;
+use Composer\Script\ScriptEvents;
+use Composer\Script\Event as ScriptEvent;
+use Composer\Composer;
+use Composer\IO\IOInterface;
+use Composer\Util\Filesystem;
+
 
 class InstallPlugin implements PluginInterface, EventSubscriberInterface
 {
