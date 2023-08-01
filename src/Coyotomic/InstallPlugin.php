@@ -23,7 +23,7 @@ class InstallPlugin implements PluginInterface, EventSubscriberInterface
         // Implement any necessary uninstallation logic here
     }
 
-    
+
     public function activate(Composer $composer, IOInterface $io)
     {
         $this->generateFilesAndFolders(new Filesystem());
@@ -38,10 +38,11 @@ class InstallPlugin implements PluginInterface, EventSubscriberInterface
     private function copyBuildToRoot(Filesystem $fs)
     {
         // Copy the entire build folder to the project root
-        $buildDir = __DIR__ . '/../../Coyotomic'; // Replace this path with your build directory path
-        $rootDir = getcwd();
+        $buildDir = __DIR__ . '/Build'; // Replace this path with your build directory path
+        $rootDir = getcwd() . '/Coyotomic';
+        $fs->ensureDirectoryExists($rootDir);
 
-        $fs->copyThenRemove($buildDir, $rootDir);
+        $fs->copy($buildDir, $rootDir);
     }
 
     public static function getSubscribedEvents()
