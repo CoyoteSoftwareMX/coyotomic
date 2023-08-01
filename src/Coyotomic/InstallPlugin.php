@@ -1,6 +1,6 @@
 <?php
 
-namespace Coyotomic;
+namespace CoyoteSoftware\Coyotomic;
 
 use Composer\Plugin\PluginInterface;
 use Composer\EventDispatcher\EventSubscriberInterface;
@@ -13,6 +13,17 @@ use Composer\Util\Filesystem;
 
 class InstallPlugin implements PluginInterface, EventSubscriberInterface
 {
+    public function deactivate(Composer $composer, IOInterface $io)
+    {
+        // Implement any necessary deactivation logic here
+    }
+
+    public function uninstall(Composer $composer, IOInterface $io)
+    {
+        // Implement any necessary uninstallation logic here
+    }
+
+    
     public function activate(Composer $composer, IOInterface $io)
     {
         $this->generateFilesAndFolders(new Filesystem());

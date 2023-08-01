@@ -13,12 +13,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Coyotomic\\": "src/"
+            "CoyoteSoftware\\": "src/"
         }
     },
     "extra": {
        
-        "class": "Coyotomic\\InstallPlugin"
+        "class": "CoyoteSoftware\\Coyotomic\\InstallPlugin"
     },
     "authors": [
         {
