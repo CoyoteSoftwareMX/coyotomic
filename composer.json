@@ -5,7 +5,7 @@
     "license": "Unlicense",
     "autoload": {
         "psr-4": {
-            "Coyotesoftware\\": "src/"
+            "Coyotomic\\": "src/"
         }
     },
     "extra": {
